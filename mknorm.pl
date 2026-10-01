@@ -117,7 +117,7 @@ my $type = $types[0];
 my ($is_uni, $is_utf16, $relative_prefix, $write_exc);
 if ($type eq 'u8') {
     ($is_uni, $is_utf16, $relative_prefix, $write_exc) =
-        (0, 0, [qw(src extu8 un8if)], 0);
+        (0, 0, [qw(src extu8 un8if)], 1);
 } elsif ($type eq 'w16') {
     ($is_uni, $is_utf16, $relative_prefix, $write_exc) =
         (1, 1, [qw(src extwchar unw16if)], 1);
